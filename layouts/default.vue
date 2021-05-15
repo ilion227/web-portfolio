@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="relative">
+    <TheNavbar class="invisible md:visible" />
     <Nuxt />
   </div>
 </template>
@@ -53,3 +54,9 @@ html {
   background-color: #35495e;
 }
 </style>
+<script>
+import TheNavbar from '~/components/TheNavbar'
+export default {
+  components: { TheNavbar },
+}
+</script>
